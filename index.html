@@ -109,9 +109,12 @@ var scene = createScene();
 engine.runRenderLoop(function () {
   scene.render();
 });
+
+engine.setSize(800, 600);
+
+// Add a resize event listener to adjust the viewport size
 window.addEventListener("resize", function () {
-  engine.resize();
-});
+    engine.setSize(window.innerWidth, window.innerHeight);
 </script>
 </div>
 	
