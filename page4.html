@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pales Halle 6 - Fonte au sable</title>
+	<style>
+		body {
+			background-image: url(background_halle6_crop.png);
+			background-size: cover;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: rgba(0, 0, 0, 0.5);
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+		}
+		#logo {
+			display: inline-block;
+			vertical-align: middle;
+			height: 50px;
+			margin: 0;
+			padding: 0;
+		}
+		#content {
+			position: absolute;
+			top: 50%;
+			left: 150px;
+			transform: translateY(-50%);
+			padding: 20px;
+			color: white;
+			background-color: rgba(0, 0, 0, 0.5);
+			width: 400px;
+			height: 650px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		#content h1 {
+			margin: 0;
+			font-size: 32px;
+			font-weight: normal;
+			text-align: center;
+		}
+		#content p {
+			margin: 20px 0;
+			font-size: 16.5px;
+			line-height: 1.5;
+			text-align: left;
+		}
+		#button {
+			margin-top: 20px;
+			align-self: flex-end;
+			background-color: white;
+			color: black;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		img {
+			width: 45%;
+			margin: 10px;
+			box-sizing: border-box;
+			border: 1px solid black;
+			padding: 5px;
+		}
+
+	</style>
+	<link rel="icon" href="logo_noir.png">
+</head>
+<body>
+	<img id="logo" src="logo.png" alt="Logo du site">
+	<div id="content">
+		<h1>Chef-modèles de pales d’hélices de bateau</h1>
+		<p>Voir ici les images des Chef-modèles de pales d’hélices de bateau exposés au premier étage de la Halle 6 Ouest  à Nantes. </p>
+
+
+		<button id="button1" onclick="window.location.href='page2.html'">Pourquoi ces pales sont-elles ici ?</button>
+		<button id="button2" onclick="window.location.href='index.html'">Retourner à l'accueil</button>
+	</div>
+
+	<img src="images2/p1.JPEG" alt="Picture 1">
+	<img src="images2/p2.JPEG" alt="Picture 2">
+	<img src="images2/p3.JPEG" alt="Picture 3">
+	<img src="images2/p4.JPEG" alt="Picture 4">
+</body>
+</html>
