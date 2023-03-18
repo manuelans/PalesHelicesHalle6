@@ -93,6 +93,8 @@ Les hélices correspondantes, constituées de plusieurs pales, atteignaient prob
 var canvas = document.createElement("canvas");
 document.getElementById("model-container").appendChild(canvas);
 var engine = new BABYLON.Engine(canvas, true);
+
+engine.setSize(600 px, 600 px);
 var createScene = function () {
   var scene = new BABYLON.Scene(engine);
   var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
@@ -110,7 +112,6 @@ engine.runRenderLoop(function () {
   scene.render();
 });
 
-engine.setSize(800, 600);
 
 // Add a resize event listener to adjust the viewport size
 window.addEventListener("resize", function () {
