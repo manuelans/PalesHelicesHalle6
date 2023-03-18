@@ -111,6 +111,12 @@ var scene = createScene();
 engine.runRenderLoop(function () {
   scene.render();
 });
+	
+	
+window.addEventListener("resize", function () {
+    engine.setSize(window.innerWidth, window.innerHeight);
+});
+
 
 
 </script>
