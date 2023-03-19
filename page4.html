@@ -87,6 +87,18 @@
 			justify-content: center;
 			align-items: flex-start;
 		}
+		.column {
+			float: right;
+			width: 50%;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 
 	</style>
 	<link rel="icon" href="logo_noir.png">
@@ -101,13 +113,13 @@
 		<button id="button2" onclick="window.location.href='index.html'">Retourner à l'accueil</button>
 	</div>
 	
-	<div id="content2">
+	<div class="row">
 		<img id="image 1" src="images2/p1.JPEG" alt="Picture 1" height="400" width="300">
 		<p>  </p>
 		<img id="image 2" src="images2/p2.JPEG" alt="Picture 2" height="400" width="300">
 	</div>
 	
-	<div id="content3">
+	<div class="column">
 		<img id="image 3" src="images2/p3.JPEG" alt="Picture 3" height="400" width="300">
 		<p>  </p>
 		<img id="image 4" src="images2/p4.JPEG" alt="Picture 4" height="400" width="300">
