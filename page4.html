@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pales Halle 6 - Fonte au sable</title>
+	<title>Pales Halle 6 - Phototèque virtuelle</title>
 	<style>
 		body {
 			background-image: url(background_halle6_crop.png);
@@ -62,43 +62,14 @@
 		#content2 {
 			position: absolute;
 			top: 50%;
-			left: 550px;
+			right: 350px;
 			transform: translateY(-50%);
 			padding: 20px;
 			color: white;
-			width: 400px;
-			height: 650px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
+			font-size: 16.5px;
+			line-height: 1.5;
+			text-align: center;
 		}
-		#content3 {
-			position: absolute;
-			top: 50%;
-			left: 850px;
-			transform: translateY(-50%);
-			padding: 20px;
-			color: white;
-			width: 400px;
-			height: 650px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
-		}
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: flex-end;
-		}
-
-		img {
-			max-width: 50%;
-			height: auto;
-			margin: 5px;
-		}
-
 	</style>
 	<link rel="icon" href="logo_noir.png">
 </head>
@@ -112,7 +83,7 @@
 		<button id="button2" onclick="window.location.href='index.html'">Retourner à l'accueil</button>
 	</div>
 	
-	<div class="container">
+	<div id="content2">
 		<img id="image 1" src="images2/p1.JPEG" alt="Picture 1" height="400" width="300">
 		<img id="image 2" src="images2/p2.JPEG" alt="Picture 2" height="400" width="300">
 		<img id="image 3" src="images2/p3.JPEG" alt="Picture 3" height="400" width="300">
